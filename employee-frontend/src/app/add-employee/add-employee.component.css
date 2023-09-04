@@ -1,0 +1,85 @@
+/* add-employee.component.css */
+
+.employee-form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .employee-form h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .employee-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .employee-form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .employee-form input[type="text"],
+  .employee-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .employee-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* employee-list.component.css */
+  
+  .employee-list {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .employee-list h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .employee-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .department-filter label {
+    font-weight: bold;
+  }
+  
+  .department-filter select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .employee-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .employee-list li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  

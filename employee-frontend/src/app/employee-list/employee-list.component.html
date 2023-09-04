@@ -1,0 +1,22 @@
+<div class="employee-list">
+  <h2>Employee List</h2>
+  <div class="employee-stats">
+    <p>Male Employees: {{ maleEmployeeCount }}</p>
+    <p>Female Employees: {{ femaleEmployeeCount }}</p>
+  </div>
+  <div class="department-filter">
+    <label for="departmentFilter">Filter by Department:</label>
+    <select id="departmentFilter" [(ngModel)]="selectedDepartment" (change)="filterEmployees()">
+      <option value="">All Departments</option>
+      <option value="1">HR</option>
+      <option value="2">IT</option>
+      <option value="3">DevOps</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+  <ul>
+    <li *ngFor="let employee of filteredEmployees">
+      {{ employee.name }} ({{ employee.gender }}) - Department: {{ getDepartmentName(employee.departmentId) }}
+    </li>
+  </ul>
+</div>

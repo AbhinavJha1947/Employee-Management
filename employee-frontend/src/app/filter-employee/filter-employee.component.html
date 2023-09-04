@@ -1,0 +1,13 @@
+<form (ngSubmit)="filterEmployees()">
+  <label>Select Department:
+    <select [(ngModel)]="selectedDepartment" name="department">
+      <option value="">All</option>
+      <option *ngFor="let department of departments" [value]="department.id">{{ department.name }}</option>
+    </select>
+  </label>
+  <button type="submit">Filter</button>
+</form>
+
+<ul>
+  <li *ngFor="let employee of filteredEmployees">{{ employee.name }} ({{ employee.gender }})</li>
+</ul>
